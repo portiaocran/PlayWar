@@ -11,10 +11,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class War extends Game {
-   public War (ArrayList<Player> players) {
-      super(players);
-   }
-
 
    public void play (ImageView a, ImageView b, Label label1, Label label2) throws InterruptedException {
 

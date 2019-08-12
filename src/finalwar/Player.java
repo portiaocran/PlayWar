@@ -8,10 +8,11 @@ package finalwar;
 import java.util.LinkedList;
 
 public class Player {
+    
    private LinkedList<Card> deck;
 
-   public Player (LinkedList<Card> deck) {
-      this.deck = deck;
+   public Player () {
+      this.deck = new LinkedList<Card>();
    }
    //testt
 //

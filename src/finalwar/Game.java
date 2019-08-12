@@ -7,11 +7,21 @@ package finalwar;
 import java.util.ArrayList;
 
 public abstract class Game {
-   private ArrayList<Player> players;// the players of the game
+    
+   protected ArrayList<Player> players;// the players of the game
+   protected ArrayList<Card> cardDeck;
 //test//
 
-   public Game (ArrayList<Player> players) {
-      this.players = players;
+   public Game () {
+       
+      this.players = new ArrayList<Player>();
+      this.cardDeck=  new ArrayList<Card>();
+	   
+   }
+   
+   
+   public void add(Player player) {
+       this.players.add(player);
    }
 
    public ArrayList<Player> getPlayers () {
