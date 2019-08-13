@@ -1,8 +1,6 @@
 package finalwar;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -28,7 +26,6 @@ public class FinalWar extends Application {//test
     
    @Override
    public void start (Stage primaryStage) {
-      List<Card> cardDeck = new ArrayList<>();
 
       for (int x = 0; x < 4; x++) {          //for loop using the 4 suits
          for (int y = 2; y < 15; y++) {     // for loop for 13 for cards 2-10 and faced cards1
