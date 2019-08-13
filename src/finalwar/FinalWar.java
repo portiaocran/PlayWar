@@ -43,8 +43,8 @@ public class FinalWar extends Application {//test
       p1.getDeck().addAll(war.cardDeck.getCardDeck().subList(0, 26)); 
      Player p2 = new Player();
      p2.getDeck().addAll(war.cardDeck.getCardDeck().subList(26, war.cardDeck.getCardDeck().size()));
-     war.add(p1);
-      war.add(p2);
+     war.players.add(p1);
+      war.players.add(p2);
    
 
       HBox hBox = new HBox(5);

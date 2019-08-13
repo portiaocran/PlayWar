@@ -4,32 +4,17 @@ package finalwar;
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-import java.util.ArrayList;
 
 public abstract class Game {
     
-   protected ArrayList<Player> players;// the players of the game
+   protected PlayerList players;// the players of the game
    protected CardDeck cardDeck; //cardDeck
 //test//
 
    public Game () {
        
-      this.players = new ArrayList<Player>();
-      this.cardDeck= new CardDeck();
-     
-	   
-   }
-   
-   
-   public void add(Player player) {
-       this.players.add(player);
+      this.players = new PlayerList();
+      this.cardDeck= new CardDeck();	   
    }
 
-   public ArrayList<Player> getPlayers () {
-      return players;
-   }
-
-   public void setPlayers (ArrayList<Player> players) {
-      this.players = players;
-   }
 }//end class
