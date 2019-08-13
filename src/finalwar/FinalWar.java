@@ -32,17 +32,17 @@ public class FinalWar extends Application {//test
 
       for (int x = 0; x < 4; x++) {          //for loop using the 4 suits
          for (int y = 2; y < 15; y++) {     // for loop for 13 for cards 2-10 and faced cards1
-            war.cardDeck.add(new Card(x, y)); //create new card then use add method to combine to array list
+            war.cardDeck.getCardDeck().add(new Card(x, y)); //create new card then use add method to combine to array list
          } //end cards for loop
       }//end suit for
 
-      Collections.shuffle(war.cardDeck, new Random()); //deck shuffler
+      Collections.shuffle(war.cardDeck.getCardDeck(), new Random()); //deck shuffler
 
 
       Player p1 = new Player();
-      p1.getDeck().addAll(war.cardDeck.subList(0, 26)); 
+      p1.getDeck().addAll(war.cardDeck.getCardDeck().subList(0, 26)); 
      Player p2 = new Player();
-     p2.getDeck().addAll(war.cardDeck.subList(26, war.cardDeck.size()));
+     p2.getDeck().addAll(war.cardDeck.getCardDeck().subList(26, war.cardDeck.getCardDeck().size()));
      war.add(p1);
       war.add(p2);
    

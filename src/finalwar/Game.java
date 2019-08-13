@@ -9,13 +9,14 @@ import java.util.ArrayList;
 public abstract class Game {
     
    protected ArrayList<Player> players;// the players of the game
-   protected ArrayList<Card> cardDeck;
+   protected CardDeck cardDeck; //cardDeck
 //test//
 
    public Game () {
        
       this.players = new ArrayList<Player>();
-      this.cardDeck=  new ArrayList<Card>();
+      this.cardDeck= new CardDeck();
+     
 	   
    }
    
